@@ -1,2 +1,11 @@
-git status
+$ git status
+On branch first-branch
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   status.txt
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    DELETEME.txt
 
