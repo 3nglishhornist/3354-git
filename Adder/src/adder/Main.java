@@ -6,6 +6,8 @@ public class Main {
         try {
             int result = addArguments(args);
             System.out.println(result);
+        } catch (Exception e) {
+            System.err.println("Please provide n integers to add");
         }
 	catch(ArrayIndexOutOfBoundsException e){
 		System.err.println("Not enough arguments");
@@ -14,12 +16,23 @@ public class Main {
      	{
      		System.out.println(e.getMessage());
      	}
-	catch(Exception e){
-		System.err.println("Please provide two integers to add");
-	}
     }
 
     private static int addArguments(String[] args) {
-        return Integer.valueOf(args[0]) + Integer.valueOf(args[1]);
+        int sum = 0;
+	    
+	if (args[0] == '-'){
+		for (int i = 1 ; i < args.length() ; i++){
+			sum = sum - Integer.valueOf(args[i]);
+		}	
+	}
+		
+	else{
+		for (int i = 0 ; i < args.length() ; i++){
+			sum = sum + Integer.valueOf(args[i]);
+		}
+	}
+
+	return sum;
     }
 }

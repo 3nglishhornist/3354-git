@@ -1,0 +1,6 @@
+a. 7 commits
+b. The .gitignore file was added on January 24, 2017.
+c. Git status lets the user look through the working directory and staging area, while git log can only work on the committed history.
+d. Untracked files are new files whose changes are not in Git. Changes made to unstaged files are in Git, only the changes haven't been committed yet. All untracked files are unstaged files, but not all unstaged files are untracked files.
+e. Git reset can make changes to the staging area. Git revert fixes mistakes by creating a new commit without any errors, allowing it to not lose any history. Git checkout records all commits made on a specific branch.
+f. You can lose some of your work
